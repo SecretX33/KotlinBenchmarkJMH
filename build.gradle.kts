@@ -17,7 +17,7 @@ repositories {
     mavenCentral()
 }
 
-val javaVersion = "17"
+val javaVersion = 17
 val jmhVersion = "1.35"
 
 dependencies {
@@ -29,15 +29,16 @@ dependencies {
 }
 
 tasks.withType<JavaCompile> {
-    sourceCompatibility = javaVersion
-    targetCompatibility = javaVersion
-    options.encoding = "UTF-8"
+    options.apply {
+        release.set(javaVersion)
+        encoding = "UTF-8"
+    }
 }
 
 tasks.withType<KotlinCompile> {
     kotlinOptions {
         freeCompilerArgs = listOf("-Xjsr305=strict", "-Xjvm-default=all")
-        jvmTarget = javaVersion
+        jvmTarget = javaVersion.toString()
     }
 }
 
