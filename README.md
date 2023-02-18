@@ -1,6 +1,6 @@
 # KotlinBenchmarkJMH
 
-Benchmark setup for code already configured for ease of use.
+Benchmark setup for code already configured for ease of use, ready to be cloned and used by you!
 
 ## Motivation
 
@@ -29,12 +29,13 @@ When executing the tasks on your IDE, **do not** run it on *debug mode* to avoid
 The benchmarks results are saved in three different places:
 
 ### Text
-- Your terminal, when the execution ends (text only).
+
+- Your terminal, when the execution ends.
 - A copy of what is displayed on the terminal is saved to the file `build/results/jmh/humanResults.txt`.
 
 ### Graph
 
-- A visual, graphic version is saved on `build/results/jmh/html/index.html`, which generates a pretty bar graph that makes the task of comparing differences and visualizing the timings much easier. The generated graphs look like this:
+- A visual, graphic version is saved on `build/results/jmh/html/index.html`, which generates a pretty bar graph that makes the task of comparing differences and visualizing the timings much easier. The generated graph look like this:
 
 
 ![example table](benchmarks/EagerVsLazyException/img/linear_table.png)
