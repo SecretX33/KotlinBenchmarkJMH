@@ -2,10 +2,10 @@ import org.jetbrains.kotlin.com.google.common.reflect.ClassPath
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.9.0"
-    kotlin("kapt") version "1.9.0"
-    kotlin("plugin.allopen") version "1.9.0"
-    id("me.champeau.jmh") version "0.6.8"
+    kotlin("jvm") version "1.9.22"
+    kotlin("kapt") version "1.9.22"
+    kotlin("plugin.allopen") version "1.9.22"
+    id("me.champeau.jmh") version "0.7.2"
     id("io.morethan.jmhreport") version "0.9.0"
     application
 }
@@ -17,8 +17,8 @@ repositories {
     mavenCentral()
 }
 
-val javaVersion = 17
-val jmhVersion = "1.36"
+val javaVersion = 21
+val jmhVersion = "1.37"
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
